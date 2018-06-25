@@ -39,7 +39,11 @@ ul{
   position: fixed;
   top:0;
   left: 0;
-  z-index: 666;
+  z-index: 999;
+  transition: all 1s;
+}
+.lt_aside.hidemenu{
+  left : -180px;
 }
 .lt_aside .title{
   text-align: center;
@@ -100,8 +104,13 @@ ul{
   background-color: skyblue;
   padding-left: 180px;
   padding-top: 50px;
+  transition:all 1s;
+
 }
-.lt_topbar{
+.lt_main.hidemenu{
+  padding-left:0px;
+}
+.lt_main .lt_topbar{
   height: 50px;
   line-height: 50px;
   width: 100%;
@@ -110,8 +119,13 @@ ul{
   top: 0 ;
   left:0;
   padding-left: 180px;
+  transition:all 1s;
+  z-index: 666;
 }
-.lt_topbar a{
+.lt_topbar.hidemenu{
+  padding-left:0px;
+}
+.lt_main .lt_topbar a{
   height: 50px;
   width: 50px;
   line-height: 50px;
@@ -121,4 +135,7 @@ ul{
 }
 .lt_main .breadcrumb{
   margin-top: 20px;
+}
+.red{
+  color:#A94442;
 }

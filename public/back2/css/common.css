@@ -46,6 +46,7 @@ ul {
   z-index: 999;
   transition: all 1s;
 }
+
 .lt_aside.hidemenu {
   left: -180px;
 }
