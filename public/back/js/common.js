@@ -13,5 +13,9 @@ $(document).ajaxStart(function(){
 })
 
 $(document).ajaxStop(function(){
-  NProgress.done();
+  //模拟网络延迟
+  setTimeout(function(){
+    NProgress.done();
+  },500);
+
 })
