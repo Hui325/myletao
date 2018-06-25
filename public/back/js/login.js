@@ -78,7 +78,7 @@ $(function () {
           //updateStatus 参数
           //1-字段名
           //2-重置状态
-          //3-
+          //3-配置提示信息，自定义校验规则 callback
           $('#form').data("bootstrapValidator").updateStatus("password","INVALID","callback");
         }
         if(info.error === 1000){
