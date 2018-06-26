@@ -74,9 +74,12 @@ $(function () {
       data:$('#form').serialize(),
       dataType:'json',
       success:function (info) {
-        $('#addmodal').modal('hide');
-        currentpage = 1;
-        render();
+        if(info.success){
+          $('#addmodal').modal('hide');
+          currentpage = 1;
+          render();
+        }
+
       }
     })
   })
