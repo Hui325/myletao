@@ -101,7 +101,7 @@ var option = {
   yAxis: {},
   series: [{
     name: '人数',
-    type: 'bar',
+    type: 'bar',//表示图标类型，是柱状图  line表示折线图 可以与bar相互转换  pie表示饼图
     data: [300, 600, 900, 1200, 1500, 1800]
   }]
 };
@@ -112,7 +112,7 @@ myChart1.setOption(option);
 //  初始化
 var myChart2 = echarts.init(document.getElementById('echarts2'));
 // 指定图表的配置项和数据
-option = {
+var option2 = {
   title : {
     text: '热门品牌销售',
     subtext: '2018年6月',
@@ -152,7 +152,7 @@ option = {
 };
 
 // 使用刚指定的配置项和数据显示图表。
-myChart2.setOption(option);
+myChart2.setOption(option2);
 
 
 </script>
