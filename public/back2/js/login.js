@@ -96,7 +96,7 @@ $(function() {
         if ( info.error === 1000 ) {
           //alert( "用户名不存在" );
           // 将 username 的校验状态, 置成 校验失败状态, 并提示 用户名不存在
-          $('#form').data("bootstrapValidator").updateStatus("username", "INVALID", "callback");
+          $('#form').data("bootstrapValidator").updateStatus("username", "INVALID", "callback")
         }
 
         if ( info.error === 1001 ) {
