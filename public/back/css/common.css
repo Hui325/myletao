@@ -139,3 +139,11 @@ ul{
 .red{
   color:#A94442;
 }
+
+
+/*让表格里面的th和td水平垂直居中*/
+.table.table-bordered th,
+.table.table-bordered td{
+  text-align: center;
+  vertical-align: middle;
+}
