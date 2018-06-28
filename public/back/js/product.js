@@ -19,7 +19,7 @@ $(function(){
       },
       dataType:'json',
       success:function (info) {
-        console.log(info);
+        //console.log(info);
         var htmlstr = template('protmp',info);
         $('tbody').html(htmlstr);
         //console.log(htmlstr);
@@ -109,7 +109,7 @@ $(function(){
   $('#fileupload').fileupload({
     dataType:'json',
     done:function (e,data) {
-      console.log(data.result);
+      //console.log(data.result);
       //每次上传一个图片就把该图片的地址存到数组中
       picArr.unshift(data.result);
     // 动态创建img
@@ -211,7 +211,7 @@ $(function(){
   $('#form').on('success.form.bv',function (e) {
     e.preventDefault();
     var formserialize = $('#form').serialize();
-    console.log(formserialize);
+    //console.log(formserialize);
     formserialize += "&picAddr" + picArr[0].picAddr + "&picName" + picArr[0].picName;
     formserialize += "&picAddr" + picArr[1].picAddr + "&picName" + picArr[1].picName;
     formserialize += "&picAddr" + picArr[2].picAddr + "&picName" + picArr[2].picName;
