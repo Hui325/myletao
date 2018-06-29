@@ -1,0 +1,36 @@
+.sort {
+  padding: 0 10px;
+  background-color: #eeeeee;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+}
+.sort a{
+  float: left;
+  display: block;
+  width: 25%;
+  text-align: center;
+  color:#666;
+}
+.sort a.current{
+  color:orange;
+}
+.loading{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left:50%;
+  top:200px;
+  border:3px solid #007aff;
+  transform: translate(-50%);
+  animation: rotate 2s infinite linear;
+}
+@keyframes rotate {
+  from {
+    transform : translate(-50%) rotate(0deg);
+  }
+  to{
+    transform : translate(-50%) rotate(360deg);
+
+  }
+}

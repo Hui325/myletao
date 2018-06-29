@@ -29,7 +29,7 @@ $(function(){
       },
       dataType:'json',
       success:function(info){
-        console.log(info);
+        //console.log(info);
         var htmlStr = template('sectmp',info);
         $('.lt_category_main ul').html(htmlStr);
       }
