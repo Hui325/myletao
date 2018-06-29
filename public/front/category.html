@@ -24,7 +24,7 @@
     <div class="lt_category_left">
       <div class="mui-scroll-wrapper">
         <div class="mui-scroll">
-          <ul>
+          <ul id="firstcate">
             <!-- 挖个坑 -->
           </ul>
         </div>
@@ -36,48 +36,8 @@
           <!--这里放置真实显示的DOM内容-->
           <!--右侧-->
           <ul>
-            <li>
-              <a href="#">
-                <img src="./images/brand1.png" alt="">
-                <p>耐克</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/brand1.png" alt="">
-                <p>耐克</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/brand1.png" alt="">
-                <p>耐克</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/brand1.png" alt="">
-                <p>耐克</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/brand1.png" alt="">
-                <p>耐克</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/brand1.png" alt="">
-                <p>耐克</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/brand1.png" alt="">
-                <p>耐克</p>
-              </a>
-            </li>
+
+
           </ul>
         </div>
       </div>
@@ -113,13 +73,24 @@
     </ul>
   </div>
 </div>
-<!--准备分类模板-->
+<!--准备左侧分类模板-->
 <script type="text/html" id="catetmp">
   {{ each rows v i}}
-  <li class="{{ i === 0 ? 'current' : '' }}"><a href="#">{{ v.categoryName }}</a></li>
+  <li class="{{ i === 0 ? 'current' : '' }}"><a href="#" data-id="{{v.id}}">{{ v.categoryName }}</a></li>
   {{ /each }}
 </script>
 
+<!--准备右侧分类模板-->
+<script type="text/html" id="sectmp">
+  {{ each rows v i }}
+  <li>
+    <a href="#">
+      <img src="{{v.brandLogo}}" alt="">
+      <p>{{v.brandName}}</p>
+    </a>
+  </li>
+  {{ /each }}
+</script>
 
 <script src="./lib/zepto/zepto.min.js"></script>
 <script src="./lib/mui/js/mui.js"></script>
